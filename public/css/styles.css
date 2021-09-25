@@ -1,0 +1,280 @@
+/* generalidades */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+   }
+   
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+h3{
+    font-size: 24px;
+}
+
+p{
+    font-size: 12px;
+}
+div.top-header{
+    padding: 5%;
+}
+div .logoForm {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+/* termina generalidades */
+/* empieza header */
+header{
+    background-color: #EAC926;
+}
+
+header div.logo{
+    width: 50%;
+}
+
+header div.logo{
+    padding: 10px;
+}
+header nav{
+    font-size: 12px;
+}
+header .hide {
+    display: none;
+}
+
+header ul li{
+    list-style-type: none;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: #000;
+}
+header .form {
+    display: flex;
+    box-sizing: border-box;
+    background: #fff;
+    border-radius: 3px;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.5em;
+    align-items: center;
+    width: 50%;
+    max-height: 40px;
+}
+header .form .input{
+    outline: none;
+    color: #666;
+    padding: 2px;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+header .form .submit{
+    color: #666;
+    width: 10%;
+}
+
+header div.top-header p{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+div.burger-menu{
+    text-align: center;
+}
+
+div.burger-menu i{
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    height: 40px;
+    margin: 10px 0px 20px 0px;
+    padding: 10px;
+    width: 40px;
+}
+/* teermina header */
+.fa-truck:hover {
+    transform: rotate(-90deg);
+    transition-duration: 0.3s;
+}
+.price{
+    font-size: 18px;
+}
+
+.discount,
+.description{
+    font-size: 16px;
+    font-weight: normal;
+}
+.precioDescuento {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+.precioDescuento .price {
+    display: flex;
+    box-sizing: border-box;
+    width: 30%;
+    padding: 5px;
+}
+.precioDescuento .discount {
+    display: flex;
+    width: 70%;
+    padding: 5px;
+}
+h3,
+.description{
+    color: #666;
+}
+
+.description{
+    display: none;
+    margin-top: 20px;
+}
+
+section.banner img{
+    width: 100%;
+}
+
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+
+main section article{
+    background-color: #fff;    
+    margin: 10px 0px;
+}
+
+main section article img{
+    width: 100%;
+}
+
+main section article i,
+.discount{
+    color: #39b54a;
+}
+main section article .main-article {
+    position: relative;
+}
+
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+main section h3{
+    margin: 20px 0px;
+}
+
+article div.main-article{
+    width: 100%;
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+}
+/* footer empieza */
+
+footer .footerNegrita {
+    font-weight: bold;
+}
+footer .flexBoxF1,
+footer .flexBoxF2,
+footer .flexBoxF3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+
+@media (min-width: 361px){
+    main section article .description{
+        display: block;
+    }
+
+    main section article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    div.top-header{
+        display: flex;
+        align-items: center;
+    }
+    header .hide {
+        display: flex;
+        justify-content: space-between;
+    }
+    header nav {
+        padding: 0 5% 2% 5%;
+    }
+    header nav ul {
+        display: flex;
+        flex-direction: row;
+    }
+    header nav ul li {
+        margin-right: 1em;
+    }
+    header nav ul li:last-child {
+        margin-right: 0;
+    }
+    
+    header .burger-menu {
+        display: none;
+    }
+    header .top-header p {
+        text-align: right !important;
+    }
+    main .products {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    main .products article {
+        max-width: 45%;
+        margin-right: 10%;
+    }
+    main .products article:nth-child(even) {
+        margin-right: 0;
+    }
+    main .products article .precioDescuento .price {
+        width: inherit;
+    }
+}
+
+@media (min-width: 769px){
+    main .products {
+        flex-wrap: nowrap;
+    }
+    main .products article {
+        max-width: inherit;
+        margin-right: 5% !important;
+    }
+    main .products article:last-child {
+        margin-right: 0% !important;
+    }
+    footer .mainDivF {
+        display: flex;
+        border-top: 30px;
+    }
+    footer .flexBoxF1,
+    footer .flexBoxF2,
+    footer .flexBoxF3 {
+        width: 90%;
+        border-top: 1em;
+    }
+
+}

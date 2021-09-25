@@ -1,0 +1,32 @@
+.login {
+}
+.login form {
+    margin: 2em 0;
+}
+.login form .line {
+    display: flex;
+    flex-direction:column;
+    margin-bottom: 1em;
+}
+.login form .line label {
+    font-size: 12px;
+    margin-bottom: 0.5em;
+}
+.login form .line input {
+    padding: 5px 5px;
+    border: 0;
+    border-radius: 5px;
+}
+.login form .enviar {
+    background: #0044AA;
+    color: #fff;
+    padding: 1em 3em;
+    border-radius: 5px;
+    border: 0;
+    font-size: 14px;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+.login form .enviar:hover {
+    opacity: 0.6;
+}

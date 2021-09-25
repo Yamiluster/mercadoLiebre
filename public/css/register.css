@@ -1,0 +1,44 @@
+.register {
+}
+.register form {
+    margin: 2em 0;
+
+}
+.register form .line {
+    display: flex;
+    flex-direction:column;
+    margin-bottom: 1em;
+}
+.register form .line .error {
+    font-size: 12px;
+    color:#f00;
+    margin-top: 0.5em;
+}
+.register form .line p,
+.register form .line label {
+    font-size: 12px;
+    margin-bottom: 0.5em;
+}
+.register form .line input {
+    padding: 5px 5px;
+    border: 0;
+    border-radius: 5px;
+}
+.register form .borrar,
+.register form .enviar {
+    background: #0044AA;
+    color: #fff;
+    padding: 1em 3em;
+    border-radius: 5px;
+    border: 0;
+    font-size: 14px;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+.register form .borrar {
+    background: #666;
+}
+.register form .borrar:hover,
+.register form .enviar:hover {
+    opacity: 0.6;
+}
