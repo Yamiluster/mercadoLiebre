@@ -72,11 +72,13 @@ header .form .input{
     padding: 2px;
     width: 100%;
     overflow: hidden;
-    white-space: nowrap;
+    border:0;
 }
 header .form .submit{
     color: #666;
     width: 10%;
+    border: 0;
+    background: transparent;
 }
 
 header div.top-header p{
@@ -189,9 +191,12 @@ article div.main-article{
     padding: 15px;
 }
 /* footer empieza */
-
+footer {
+    padding: 0 5%;
+}
 footer .footerNegrita {
     font-weight: bold;
+    font-size: 14px;
 }
 footer .flexBoxF1,
 footer .flexBoxF2,
@@ -200,8 +205,30 @@ footer .flexBoxF3 {
     flex-direction: column;
     align-items: center;
     box-sizing: border-box;
+    margin-top: 1em;
+}
+footer .flexBoxF1 p,
+footer .flexBoxF2 p,
+footer .flexBoxF3 p {
+    text-align: center;
+}
+footer .flexBoxF1 i,
+footer .flexBoxF2 i,
+footer .flexBoxF3 i {
+    color:#0044AA;
+    font-size: 30px;
+    margin-bottom: 0.4em;
+    transition: all 0.2s;
+}
+footer .flexBoxF1 i:hover,
+footer .flexBoxF2 i:hover,
+footer .flexBoxF3 i:hover {
+    color: #EAC926;
 }
 
+footer > p {
+    margin-top: 2.4em;
+}
 
 @media (min-width: 361px){
     main section article .description{
